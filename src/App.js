@@ -13,7 +13,6 @@ class App extends Component {
           <h1 className="App-title">React Flash Cards</h1>
         </header>
         <FlashCard />
-        <EditCard />
       </div>
     );
   }

@@ -30,6 +30,9 @@ deleteCard(i) {
   
 }
 
+editCard(i){
+  
+}
 
 createCard() {
  console.log("hello")
@@ -49,7 +52,7 @@ render(){
             <p>{card.answer}</p>
             <button onClick={() => this.showAnswer(i)}>Close Answer</button>
             <button onClick={() => this.deleteCard(i)}> Delete </button>
-             <button> Edit </button>
+             <button onClick={() => this.editCard(i)}> Edit </button>
             </div>
            )
          } else {
@@ -58,7 +61,7 @@ render(){
             <h4><strong>{card.question}</strong></h4>
             <button onClick={() => this.showAnswer(i)}>Show Answer</button>
             <button onClick={() => this.deleteCard(i)} > Delete </button>
-             <button> Edit </button>
+             <button onClick={() => this.editCard(i)}> Edit </button>
             </div>
           ) 
          }  
